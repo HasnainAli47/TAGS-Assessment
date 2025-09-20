@@ -1,0 +1,29 @@
+{
+  "request_id": "0dec8847-1efc-4b4f-be38-4bb2dab45976",
+  "duration_sec": 4.34,
+  "sample_rate": 16000,
+  "pipeline": {
+    "separation": {
+      "enabled": false,
+      "method": "failed_fallback"
+    },
+    "transcription": {
+      "model": "whisper-small"
+    }
+  },
+  "segments": [
+    {
+      "start": 0,
+      "end": 3,
+      "text": "KA"
+    }
+  ],
+  "text": "KA",
+  "language": "en",
+  "timings_ms": {
+    "load": 102,
+    "separation": 135,
+    "transcription": 5252,
+    "total": 5490
+  }
+}

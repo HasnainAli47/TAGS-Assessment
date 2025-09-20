@@ -5,8 +5,6 @@ import pytest
 # The base URL for our running service. Assumes it's running locally on port 8000.
 API_URL = "http://localhost:8000/v1/transcribe"
 
-# --- FIX #1: Use a consistent and correct file name. ---
-# Let's use 'sample.mp3' as planned.
 # IMPORTANT: Make sure you have a file named 'sample.mp3' inside the 'tests/test_data/' directory.
 SAMPLE_AUDIO_PATH = os.path.join(os.path.dirname(__file__), "test_data", "sample.mp3")
 
@@ -29,8 +27,6 @@ def test_transcribe_endpoint_success(api_service_is_running):
     assert os.path.exists(SAMPLE_AUDIO_PATH), f"Sample audio file not found at: {SAMPLE_AUDIO_PATH}"
 
     with open(SAMPLE_AUDIO_PATH, "rb") as audio_file:
-        # --- FIX #2: Use the correct MIME type for the file being sent. ---
-        # For a .mp3 file, the MIME type is 'audio/mp3'.
         files = {"file": (os.path.basename(SAMPLE_AUDIO_PATH), audio_file, "audio/mp3")}
         
         response = requests.post(API_URL, files=files)
