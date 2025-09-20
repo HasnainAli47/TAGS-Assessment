@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+python-multipart
+
+# For audio processing and ML models
+torch
+torchaudio
+
+# Source Separation
+demucs
+
+# Automatic Speech Recognition
+openai-whisper
