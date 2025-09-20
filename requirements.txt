@@ -1,3 +1,5 @@
+# requirements.txt
+
 fastapi
 uvicorn
 python-multipart
@@ -5,6 +7,10 @@ python-multipart
 # For audio processing and ML models
 torch
 torchaudio
+numpy
+
+# Direct FFmpeg bindings for robust decoding
+ffmpeg-python
 
 # Source Separation
 demucs

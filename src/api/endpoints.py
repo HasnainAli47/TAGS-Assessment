@@ -17,8 +17,6 @@ async def transcribe_audio_endpoint(
     - **config**: A JSON string with optional parameters:
         - `language_hint` (str): e.g., "en", "es".
         - `enable_separation` (bool): `true` to isolate vocals first.
-        - `diarize` (bool): (Not implemented yet)
-        - `model_size` (str): (Not implemented yet, uses 'small')
     """
     if not file.content_type.startswith("audio/"):
         raise HTTPException(status_code=400, detail="Invalid file format. Please upload an audio file.")
