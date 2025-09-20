@@ -34,8 +34,8 @@ This project is a containerized microservice that accepts an audio file, separat
 
 1.  **Clone the repository:**
     ```bash
-    git clone <your-repo-url>
-    cd <your-repo-name>
+    git clone https://github.com/HasnainAli47/TAGS-Assessment
+    cd TAGS-Assessment
     ```
 
 2.  **Build and run the service using Docker Compose:**
