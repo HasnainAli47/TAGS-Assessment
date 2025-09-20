@@ -162,5 +162,5 @@ The service is designed to be "GPU-aware" but not "GPU-dependent".
 └── tests
     ├── test_api.py
     └── test_data
-        └── sample.wav
+        └── hello-48300.mp3
 ```
